@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/list_style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <h2>{% block title %} {{ list['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ list['created'] }}</span>
+
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Task" >
+        <input type="text" name="detail" placeholder="Detail">
+        <input type="submit" value="Add" placeholder="Add">
+    </form>
+
+
+    {% for task in tasks %}
+
+    <ul class="task">
+        <li id='del'> <button class="button" onclick="completeTask()"></button>{{ task['name'] }}
+          <p>{{ task['detail'] }}</p>
+        </li>
+    </ul> 
+
+    <script src="{{ url_for('static', filename= 'js/completeTask.js') }}"></script>
+    {% endfor %}
+
+{% endblock %}

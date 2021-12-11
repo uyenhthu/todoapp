@@ -1,0 +1,12 @@
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    border: 3px #eee solid;
+    color: green;
+    text-align: center;
+    padding: 10px;
+}

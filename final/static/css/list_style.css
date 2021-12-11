@@ -1,0 +1,22 @@
+.task {
+    height: 2rem;
+    padding: 1rem;
+    transition: all .5s ease;
+    transform: skew(3deg);
+    overflow: hidden;
+}
+.task:hover {
+    padding-bottom: 4rem;
+    transition: all .5s ease;
+}
+.button {
+    border-radius: 50%;
+    background-color: white; 
+    border: 2;
+    border-color: black;
+    padding: 8px;
+    align-items: center;
+    /* display: inline-block; */
+    margin: 4px 2px;
+    cursor: pointer;
+}
