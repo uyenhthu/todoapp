@@ -1,5 +1,5 @@
 # todoapp
-I wrote a simple To-Do List app from scratch, following the FlaskBlog demo--using Flask and some of its libraries like Flask-login for backend, SQL to store data, and some familiar frontend technologies (HTML + CSS + JS, no framework) introduced in Internet Seminar course by Jim Mahoney. 
+I wrote this little To-Do List app *from scratch* as a final project for Internet Seminar course by Jim Mahoney, following the FlaskBlog demo--using Flask and some of its libraries like Flask-login for backend, SQL to store data, and some familiar frontend technologies (HTML + CSS + JS). 
 
 Interactions:
   - Users can register and log in for an account. However, since I haven't set up cookies, the log-in information has not maintained with further actions yet.
